@@ -1,20 +1,23 @@
-/*number  of days in a month*/
+/*grade of a student*/
 #include<stdio.h>
 int main()
 {
-	int m,y;
-	printf(" enter the year and month");
-    scanf("%d%d",&y,&m);
-    if(m==2)
-    
-	    if(y%4==0&&(y%400==0||y%100!=0))
-	        printf("29");
-	   else
-	       printf("28");
-    else if(m==1||m==3||m==5||m==7||m==8||m==10||m==12)
-	    printf("31");
-    else
-	    printf("30");
-    return 0;
-			
+	int p,c,m,cs,b,e;
+	printf("enter the subject marks");
+	scanf("%d %d %d %d %b ",&p,&c,&cs,&m,&b);
+	e=(p+c+m+cs+b)/5;
+	if(e>=90)
+	printf("grade A");
+	else if(e>=80)
+	printf("grade B");
+	else if(e>=70)
+	printf("grade C");
+	else if(e>=60)
+	printf("grade D ");
+	else if(e>=40)
+	printf("grade E");
+	else
+	printf("grade F");
+	return 0;
+	
 }
